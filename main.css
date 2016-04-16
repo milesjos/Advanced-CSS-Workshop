@@ -1,0 +1,10 @@
+.title {
+    text-align: center;
+}
+
+.overflow_box {
+    border: 1px solid black;
+    height: 30vh;
+    width: calc(100% / 3);
+    overflow-y: scroll;
+}
