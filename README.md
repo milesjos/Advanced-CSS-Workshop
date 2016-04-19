@@ -184,3 +184,27 @@ Sometimes your standard pixels just aren't enough and you need different units f
 	* What to know
 		* Based on the property of the parent element
 		* E.g. If the parent element is 500px, a child element with a setting of `width: 50%;` would produce an element with a width of 250px
+
+##Margin & Padding Tips
+Margin and padding are a pretty simple concepts once you see the CSS Box Model (see [here](http://www.w3schools.com/css/css_boxmodel.asp) if you need a refresher).
+
+It's easy as a beginner, though, to set a static width and height on an element before giving the element margin, padding, and a border.
+
+This means your final width (and height) would look something like this:
+defined width + padding + border = *Probably more than you intended*
+
+Let's say, for example, that you want 3 boxes on a row of your page. Each would need to be 33.33...%. If you add a thick border that would throw off the width you defined. So then you might decide to subtract the border size from 33.33...%.
+
+Or, to make it easier for yourself, let's check out the CSS property:
+```css
+box-sizing: content-box /* This is the default value */
+```
+The default property value is content-box because that's what the box model is: your set width is the width of the content. Not including the padding and border.
+
+But...
+```css
+box-sizing: border-box /* This includes padding & border */
+```
+Allows you to set a width that includes padding and border in the final dimensions.
+
+Neat trick, right?
