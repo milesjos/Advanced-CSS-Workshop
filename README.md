@@ -21,7 +21,6 @@ The topics we'll be covering in this talk are:
 * Flex
 * Overflow
 * Transitions/Animations
-* AddClass, RemoveClass, and ToggleClass
 * Media Queries
 
 Let's a go!
