@@ -334,32 +334,32 @@ In the past, the spacing of children elements inside their parents required meth
 
 For example, centering a child vertically within their parent might have required you to take half of the child's height, subtract that from half the parent's height, and then use "position: absolute; top [calculated value];" on the child.
 
-**Sounds like more trouble than it is worth, right?**
+**Sounds like more trouble than it's worth, right?**
 
-Both of us were lucky. We were not familiar with HTML/CSS during this time of ambiguity. Instead, we learned flexbox.
+Luckily, we no longer have to worry about hacking out a solution. We now have flexbox.
 
-[This page](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) is a fantastic resource. Flexbox requires a lot of memorization, and both of use still go here with questions from time to time.
+[This page](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) is a fantastic resource. Flexbox requires a lot of memorization, and both of us still reference this article.
 
 **Here are the basics:**
 
-* Your parent container needs the property "display: flex;"
+* Your parent container needs the property `display: flex;`
 * You'll usually use two other properties on the parent:
-  * "justify-content: [property value]" (horizontal alignment)
-  *  "align-items: [property value]" (vertical alignment) 
-* There's a property called "flex-direction" and by default it is row.
-  * If you set this from row to "flex-direction: column;"
-     * justify-content becomes the vertical alignment
-     * align-items becomes horizontal alignment
-* "flex-wrap: nowrap;" is default. This means children stay on one line.
-  * Setting this to "flex-wrap: wrap;" gives you multiple lines and allows you to use the next property.
-* "align-content: stretch"  is the default rendering when flex-wrap is set to wrap.
+  * `justify-content: [property value];` (horizontal alignment)
+  * `align-items: [property value];` (vertical alignment) 
+* There's a property called "flex-direction" which defaults to row.
+  * If you change this to `flex-direction: column;`
+     * justify-content now controls vertical alignment
+     * align-items now controls horizontal alignment
+* `flex-wrap: nowrap;` is default. This means children stay on one line and will shrink to fit within the parent element.
+  * `flex-wrap: wrap;` makes the elements *wrap* around to the next line instead of shrinking to fit. Also, this setting allows you to use the property `align-content`.
+* `align-content: stretch`  is the default when flex-wrap is set to wrap.
   * This is similar to align-items, but rather than handle the alignment of a single row, align-content handles the entire block's alignment. 
 
-There are properties you can define for flex children, but the secret sauce is in the parent styling and that should be your main focus when first learning flexbox.
+There are properties you can define for flex children, but the secret sauce is in the parent styling and that should be your main focus when using flexbox.
 
 **So that was a lot of text.**
 
-Flexbox is really visual, so we encourage you to check out the awesome examples located [here](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) once again.
+Flexbox is really visual, so we encourage you to check out the awesome examples located [here](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) and [here](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
 
 ##Resources and Further Reading
 
