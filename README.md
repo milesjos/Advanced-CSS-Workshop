@@ -296,6 +296,76 @@ Flexbox is really visual, so we encourage you to check out the awesome examples 
 
 In certain situations, content can overflow the boundaries given by the parent element. The overflow property controls what happens to the overflowed content.
 
+##Transitions
+
+Transitions are a smooth change from one CSS property value to another over a duration.
+
+The shorthand for a transition is this:
+```css
+transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+```
+
+For example, if you have:
+```css
+button {
+	background-color: blue;
+}
+```
+and that changes on hover to:
+```css
+button:hover {
+	background-color: red;
+}
+```
+**It's not a smooth transition**. It is blue one moment and red the next when you hover.
+
+However, if we add the transition property to button like so:
+```css
+button {
+	background-color: blue;
+	transition: background-color 400ms ease-in 0s;
+}
+```
+The button will change from blue to red over 400ms and it will begin the transition immediately since the delay was 0s.
+
+Let's break down the transition shorthand property.
+
+####Transition-property
+
+* This is the CSS property you want to have a gradual change.
+* Not every CSS property can be animated.
+  * [This](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties) is a list of all properties available for transitions/animations.
+
+####Transition-duration
+* This is duration of your transition
+* Valid values are:
+  * [time]ms (e.g. 400ms)
+  * [time]s (e.g. 0.4s)
+* Default is 0s
+####Transition-timing-function
+* This property is a function that speeds up or slows down periods during the transition. [Here's](https://css-tricks.com/almanac/properties/t/transition-timing-function/) a great page explaining this property.
+* For example, "ease-in" has a parabolic function. It starts slow and get fast within the transition-duration.
+* These are the predefined functions you can use:
+  * ease
+  * linear
+  * ease-in
+  * ease-out
+  * ease-in-out
+  * step-start
+  * step-end
+* You can also provide your own function too!
+  * step() allows you show distinct steps in the transition
+  * cubic-bezier() allows you to provide a smooth transition function
+     * A fun tool we use to simplify their creation is [here](http://cubic-bezier.com/)
+####Transition-delay
+* This is the amount of time before your transition begins
+* Valid values are:
+  * [time]ms (e.g. 400ms)
+  * [time]s (e.g. 0.4s)
+* Default is 0s
+
+CSS Animations are really similar to transitions, but they take considerably more effort to create as you break down your transition piece-by-piece using keyframes. We won't be covering them in this talk, but a knowledge of transitions is a good start.
+
 ##Media Queries
 
 Media Queries are a new technique introduced in CSS3 that basically act as if-else statements in CSS despite the syntax for them being quite different.
