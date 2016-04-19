@@ -342,6 +342,7 @@ Let's break down the transition shorthand property.
   * [time]ms (e.g. 400ms)
   * [time]s (e.g. 0.4s)
 * Default is 0s
+
 ####Transition-timing-function
 * This property is a function that speeds up or slows down periods during the transition. [Here's](https://css-tricks.com/almanac/properties/t/transition-timing-function/) a great page explaining this property.
 * For example, "ease-in" has a parabolic function. It starts slow and get fast within the transition-duration.
@@ -357,6 +358,7 @@ Let's break down the transition shorthand property.
   * step() allows you show distinct steps in the transition
   * cubic-bezier() allows you to provide a smooth transition function
      * A fun tool we use to simplify their creation is [here](http://cubic-bezier.com/)
+
 ####Transition-delay
 * This is the amount of time before your transition begins
 * Valid values are:
