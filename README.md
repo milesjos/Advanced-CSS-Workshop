@@ -111,6 +111,31 @@ The difference here is that you have a reason, whereas most abuse of !important 
 
 It's up to you to decide when to use !important, but know that with great power comes great responsibility!
 
+##CSS Selectors
+
+Everyone knows the standard `class` and `id` selectors, but there are tons of other selectors that can be very useful in situations that require a bit more finesse
+
+|Selector|Syntax|Description|
+|--------------|-----------------|--------------|
+|`.class`|`.selected`|Selects all elements with `class="selected"`|
+|`#id`|`#selected`|Selects the element with `id="selected"`|
+|`*`|`*`|Selects all elements|
+|`element, element`|`.class1, .class2`|Selects all elements with `class="class1"` **and** `class="class2"`|
+|`element element`|`.class1 .class2`|Selects all `class2` elements that are nested within `class1` elements|
+|`element>element`|`.class1 > .class2`|Selects all `class2` elements that are direct children of a `class1` element|
+|`element+element`|`.class1 + .class2`|Selects the `class2` elements that are directly after `class1` elements|
+|`element~element`|`.class1 ~ .class2`|Similar to the + selector, but less strict. Selects any `class2` elements following a `class1 element`|
+|`[attribute]`|`[href]`|Selects all elements with href attribute|
+|`:link`|`a:link`|Selects anchor tags that have not yet been visited|
+|`:visited`|`a:visited`|Selects anchor tags that have been visited|
+|`:focus`|`input:focus`|Selects the input element that has focus (currently selected)|
+|`:hover`|`a:hover`|Selects tags on mouse over|
+|`:checked`|`input:checked`|Selects all checked inputs|
+|`::before/::after`|`div::after`|Inserts content before/after every div on the page|
+|`::first-letter`|`p::first-letter`|Selects first letter of every `<p>` element|
+|`::selection`|`::selection`|Selects the portion that is selected/highlighted by the user|
+
+
 ##Units
 
 Sometimes your standard pixels just aren't enough and you need different units for your styles. Here's a breakdown for all the different units you can use in CSS.
