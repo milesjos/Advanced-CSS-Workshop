@@ -272,6 +272,76 @@ Here's a list of all the resources we used in the making of this talk.
 * [General rules](https://css-tricks.com/almanac/properties/p/position/)
 * [Centering in CSS](https://css-tricks.com/centering-css-complete-guide/)
 
+**There are four position values you need to know:**
+
+* Static
+* Relative
+* Fixed
+* Absolute
+
+####Static
+This is the default value of the position property.
+```css 
+* {
+position: static;
+}
+```
+With this value, every element is displayed on the page in the order it was listed in the HTML.
+
+If you have properties for top, right, bottom, and left defined they will be ignored under a value of static.
+
+####Relative
+```css 
+* {
+position: relative;
+}
+```
+With this value, elements are displayed with an offset that is defined by properties top, right, bottom, and left.
+```css
+* {
+position: relative;
+top: -10px;
+right: 0;
+left: 5px;
+bottom: 0;
+}
+```
+This would result in an element rendered 10px closer to the top of the page and 5px to the right.
+
+####Fixed
+```css 
+* {
+position: fixed;
+}
+```
+With this value, elements are placed with respect to the viewport. 
+```css
+* {
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+}
+```
+This would result in an element that is always "stuck" to the top of the window. You'll often see those properties and values used for navigation bars.
+
+####Absolute
+```css 
+* {
+position: absolute;
+}
+```
+With this value, elements are placed with respect to a parent element. You might consider fixed to be placement relative to the window and absolute to be placement relative to a parent.
+```css
+* {
+position: relative;
+right: 0;
+bottom: 0
+left: 0;
+}
+```
+This would result in an element that is always "stuck" to the bottom of the *closest ancestor with a position value != to static*. Usually you would want that ancestor to be the parent, but not always.
+
 ######Flex
 
 * [CSS Tricks guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
