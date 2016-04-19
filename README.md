@@ -361,6 +361,43 @@ There are properties you can define for flex children, but the secret sauce is i
 
 Flexbox is really visual, so we encourage you to check out the awesome examples located [here](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) and [here](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
 
+##Media Queries
+
+Media Queries are a new technique introduced in CSS3 that basically act as if-else statements in CSS despite the syntax for them being quite different.
+
+####Syntax
+
+The syntax for media queries is fairly simple. Just choose the media type and a condition to decide when the styles will be used and you're good to go! Here's the example that we used in our sample webpage.
+
+```css
+@media screen and (max-width: 600px) {
+  body {
+    background-color: purple;
+  }
+}
+```
+
+####Media Types
+
+|Value 	|Description			|
+|------ |-----------------------|
+|all	|Used for all devices	|
+|print	|Used for print view/printers|
+|screen	|Used for desktop and mobile views|
+|speech	|Used for screenreaders|
+
+####Media Features
+
+This is a list of the most commonly used features. A full list can be found [here](http://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
+
+|Value			|Description					|
+|---------------|-------------------------------|
+|max-height		|The maximum height of the display area	|
+|max-width		|The maximum width of the display area	|
+|min-height		|The minimum height of the display area	|
+|min-width		|The minimum width of the display area	|
+|orientation	|Orientation of the viewport (landscape/portrait)|
+
 ##Resources and Further Reading
 
 Here's a list of all the resources we used in the making of this talk. 
