@@ -233,45 +233,7 @@ Allows you to set a width that includes padding and border in the final dimensio
 
 Neat trick, right?
 
-##Resources and Further Reading
-
-Here's a list of all the resources we used in the making of this talk. 
-
-######General Resources
-
-* [Can I use](http://caniuse.com/)
-* [CSS Tricks](https://css-tricks.com/)
-
-######CSS Normalize and Reset
-
-* [Normalize CSS](https://necolas.github.io/normalize.css/)
-* [The most commonly used version of CSS Reset](http://cssreset.com/scripts/eric-meyer-reset-css/)
-* [A good summary of the two and their differences](https://ddessaunet.gitbooks.io/css-training/content/content/reset/reset-vs-normalize-doc.html)
-* [Codepen showing the differences between them](http://codepen.io/nategreen/pen/MwxRvP?editors=110)
-
-######!important
-
-* [Article on how and when to use !important](https://www.smashingmagazine.com/2010/11/the-important-css-declaration-how-and-when-to-use-it/)
-
-######Selectors & Pseudo-Selectors
-
-* [In depth explanation of some important selectors](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
-
-######Units
-
-* [Article on the subtleties between each of the different units](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
-
-######Margin and Padding
-
-* [Margin rules](https://css-tricks.com/almanac/properties/m/margin/)
-* [Padding Rules](https://css-tricks.com/almanac/properties/p/padding/)
-* [Border-box](https://css-tricks.com/almanac/properties/b/box-sizing/)
-
-######Positioning
-
-* [General rules](https://css-tricks.com/almanac/properties/p/position/)
-* [Centering in CSS](https://css-tricks.com/centering-css-complete-guide/)
-
+##Positioning
 **There are four position values you need to know:**
 
 * Static
@@ -341,6 +303,45 @@ left: 0;
 }
 ```
 This would result in an element that is always "stuck" to the bottom of the *closest ancestor with a position value != to static*. Usually you would want that ancestor to be the parent, but not always.
+
+##Resources and Further Reading
+
+Here's a list of all the resources we used in the making of this talk. 
+
+######General Resources
+
+* [Can I use](http://caniuse.com/)
+* [CSS Tricks](https://css-tricks.com/)
+
+######CSS Normalize and Reset
+
+* [Normalize CSS](https://necolas.github.io/normalize.css/)
+* [The most commonly used version of CSS Reset](http://cssreset.com/scripts/eric-meyer-reset-css/)
+* [A good summary of the two and their differences](https://ddessaunet.gitbooks.io/css-training/content/content/reset/reset-vs-normalize-doc.html)
+* [Codepen showing the differences between them](http://codepen.io/nategreen/pen/MwxRvP?editors=110)
+
+######!important
+
+* [Article on how and when to use !important](https://www.smashingmagazine.com/2010/11/the-important-css-declaration-how-and-when-to-use-it/)
+
+######Selectors & Pseudo-Selectors
+
+* [In depth explanation of some important selectors](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+
+######Units
+
+* [Article on the subtleties between each of the different units](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+
+######Margin and Padding
+
+* [Margin rules](https://css-tricks.com/almanac/properties/m/margin/)
+* [Padding Rules](https://css-tricks.com/almanac/properties/p/padding/)
+* [Border-box](https://css-tricks.com/almanac/properties/b/box-sizing/)
+
+######Positioning
+
+* [General rules](https://css-tricks.com/almanac/properties/p/position/)
+* [Centering in CSS](https://css-tricks.com/centering-css-complete-guide/)
 
 ######Flex
 
