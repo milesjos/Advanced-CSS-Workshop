@@ -140,94 +140,23 @@ Everyone knows the standard `class` and `id` selectors, but there are tons of ot
 
 Sometimes your standard pixels just aren't enough and you need different units for your styles. Here's a breakdown for all the different units you can use in CSS.
 
-* Pixels
-	* Syntax
-		* `width: 1000px;`
-	* What to know
-		* Most commonly used unit
-		* Is actually an [angular measurement](http://inamidst.com/stuff/notes/csspx) and is not mapped to the physical pixels on the screen
-* Inches
-	* Syntax
-		* `width: 10in;`
-	* What to know
-		* These are not actual inches, but instead directly map to pixels
-		* `1in == 96px`
-* Centimeters
-	* Syntax
-		* `width: 100cm;`
-	* What to know
-		* Also just mapped to pixels
-		* `1cm == 37.8px`
-* Millimeters
-	* Syntax
-		* `width: 1000mm;`
-	* What to know 
-		* They are exactly as one would expect
-		* `1mm == 0.1cm ==3.78px`
-* Ems
-	* Syntax
-		* `width: 10em;`
-	* What to know
-		* Is relative to the current font size of the parent element
-		* Ems also will multiply upon themselves upon nesting
-		* When not nested at all, `1em == 16px`
-* Rems
-	* Syntax
-		* `width: 10rem;`
-	* What to know
-		* Like em, but is relative to the [root element](https://en.wikipedia.org/wiki/Root_element) instead of the parent element
-		* Does not work in IE 8, Safari 4, or iOS 3.2
-* Points
-	* Syntax
-		* `width: 100pt;`
-	* What to know
-		* Physical measurement equal to 1/72 of an inch. 
-		* Makes most sense for items that will be displayed in print
-		* There used to be large differences between browser's interpretations of what a point was. See [ here](http://css-tricks.com/wp-content/csstricks-uploads/pointsizeonscreen.jpg)
-* Pica
-	* Syntax
-		* `width: 12pc;`
-	* What to know
-		* Same as points
-		* `1 pc == 12pt`
-* ex
-	* Syntax
-		* `width: 50ex;`
-	* What to know
-		* Similar to ems, but based on the height of the x-character
-		* Different from ems in that the size will change according to the font-family
-* ch
-	* Syntax
-		* `width: 50ch;`
-	* What to know
-		* Same as ex, but based on the width of the 0 character
-* Viewport Width
-	* Syntax
-		* `width: 10vw;`
-	* What to know
-		* `1vw` is equal to 1% of the width of the viewport
-		* Remains consistent for all elements on the page, regardless of the font-size of the parent element
-* Viewport Height
-	* Syntax
-		* `width: 10v;`
-	* What to know
-		* Same as vw, but based on the height instead
-* Viewport Minimum
-	* Syntax
-		* `width: 10vmin;`
-	* What to know
-		* Chooses whichever is smaller at the moment, vw or vh. 
-* Viewport Maximum
-	* Syntax
-		* `width: 10vmax;`
-	* What to know
-		* Chooses whichever is larger at the moment, vw or vh
-* Percentage
-	* Syntax
-		* `width: 50%;`
-	* What to know
-		* Based on the property of the parent element
-		* E.g. If the parent element is 500px, a child element with a setting of `width: 50%;` would produce an element with a width of 250px
+|Unit		|Syntax			|Description				|
+|-----------|---------------|---------------------------|
+|Pixels		|`width: 1000px;`|Most commonly used unit. Is actually an [angular measurement](http://inamidst.com/stuff/notes/csspx) and is not mapped to the physical pixels on the screen|
+|Inches		|`width: 10in;`	|Not actual inches. Directly mapped to pixel size `1in == 96px`|
+|Centimeters|`width: 100cm;`|Also mapped to pixels `1cm == 37.8px`|
+|Millimeters|`width: 1000mm;`|`1mm == 0.1cm ==3.78px`|
+|Ems		|`width: 10em;`	|Relative to the current font size of the parent element and will multiply upon themselves upon nesting. When not nested at all, `1em == 16px`|
+|Rems		|`width: 10rem;`|Like em, but is relative to the [root element](https://en.wikipedia.org/wiki/Root_element) instead of the parent element|
+|Points		|`width: 100pt;`|Physical measurement. `1pt == 1/72 of an inch`|
+|Pica		|`width: 12pc;`	|`1 pc == 12pt`|
+|ex			|`width: 50ex;` |Similar to ems, but based on the height of the x-character and will change size depending on the font family|
+|ch			|`width: 50ch;` |Same as ex, but based on the width of the 0 character|
+|Viewport Width|`width: 10vw;`|`1vw` is equal to 1% of the width of the viewport|
+|Viewport Height|`width: 10vh;`|Same as vw, but based on viewport height|
+|Viewport Minimum|`width: 10vmin;`|Chooses whichever is smaller at the moment, vw or vh|
+|Viewport Maximum|`width: 10vmax;`|Chooses whichever is larger at the moment, vw or vh|
+|Percent	|`width: 50%;`|References the parent element's size|
 
 ##Margin & Padding Tips
 
