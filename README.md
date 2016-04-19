@@ -47,6 +47,22 @@ Using a CSS reset removes all default styles completely, making it up to you to 
 	* Declarations that are unnecessary, such as arbitrary margins on certain elements
 	* The file is fairly large for what it does, but is manageable if you remove all the comments, minify it, and include it as one line in the main stylesheet
 
+##!important
+Essentially, !important follows a property value and gives it highest priority in the stylesheet. This breaks the cascading order of stylesheets.
+####Example 1
+```css
+p {
+	color: white !important;
+}
+#p_tag {
+	color: red;
+}
+```
+```html
+<p id='p_tag'>This will be white.</p>
+```
+Above is an example of !important abuse. IDs should be used for specificity in styling. In this case, either color shouldn't be used for the ID styling (since you obviously want the general style) or the !important needs to go.
+
 ####Example 2
 ```css
 p {
