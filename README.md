@@ -427,3 +427,4 @@ Here's a list of all the resources we used in the making of this talk.
 	* [Less](http://lesscss.org/)
 * [initial-scale=1](https://css-tricks.com/probably-use-initial-scale1/)
 * CSS Autoprefixers for [Sublime Text](https://github.com/sindresorhus/sublime-autoprefixer) and [Atom](https://atom.io/packages/autoprefixer)
+* [Another HUGE css resource list](https://github.com/sotayamashita/awesome-css)
