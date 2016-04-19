@@ -1,7 +1,10 @@
 Advanced CSS Techniques
 =====================
 
+![Spartan Hackers](http://spartanhackers.com/img/spartan-hackers-banner.png)
+
 ### Notes from [Morgan](https://github.com/memuyskens) & Josh's talk for [Spartan Hackers](http://spartanhackers.com/)
+
 We've found these CSS techniques and resources extremely helpful through our adventures as web developers and we thought they would be helpful for anyone seeking help creating more advanced designs using CSS. Happy hacking!
 ## Introduction
 Do you want to make your web pages beautiful? Would you like to wow your friends with your amazing transitions? Would you like to get more of a handle on positioning?
@@ -24,13 +27,17 @@ The topics we'll be covering in this talk are:
 Let's a go!
 
 ##CSS Normalize and Reset
+
 In short, CSS Normalize and Reset are different solutions to the same problem:
 
 *How do we handle differences between vendor default stylesheets among commonly used web browsers?*
 
 ###[normalize.css](https://necolas.github.io/normalize.css/)
+
 Normalize handles these differences by inserting one master stylesheet that makes html elements render with the same styles no matter what browser the page is viewed on. 
+
 ###[CSS Reset](http://cssreset.com/scripts/eric-meyer-reset-css/)
+
 Using a CSS reset removes all default styles completely, making it up to you to apply everything. This means no bullet points for `<ul></ul>`, no `<h1></h1>` sizing, no nothing.
 
 ####Advantages
@@ -52,8 +59,11 @@ Using a CSS reset removes all default styles completely, making it up to you to 
 	* The file is fairly large for what it does, but is manageable if you remove all the comments, minify it, and include it as one line in the main stylesheet
 
 ##!important
+
 Essentially, !important follows a property value and gives it highest priority in the stylesheet. This breaks the cascading order of stylesheets.
+
 ####Example 1
+
 ```css
 p {
 	color: white !important;
@@ -62,20 +72,25 @@ p {
 	color: red;
 }
 ```
+
 ```html
 <p id='p_tag'>This will be white.</p>
 ```
+
 Above is an example of !important abuse. IDs should be used for specificity in styling. In this case, either color shouldn't be used for the ID styling (since you obviously want the general style) or the !important needs to go.
 
 ####Example 2
+
 ```css
 p {
 	color: white !important;
 }
 ```
+
 ```html
 <p style='color: red;'>This will be white.</p>
 ```
+
 This could be thought of as an abuse of !important (it disrupts the cascading order seen below), but maybe you don't want inline styles to show up anymore.
 
 The difference here is that you have a reason, whereas most abuse of !important comes from dungbeetling your CSS and being too lazy to fix it (view Example #1).
@@ -83,14 +98,13 @@ The difference here is that you have a reason, whereas most abuse of !important 
 *Note that any conflicts with the order below are solved through using the styling of the more specific selector*
 
 ####Cascading Order (no. 4 is most important)
+
 1. Browser default
 2. External style sheet (for example, a stylesheet pulled from a CDN)
 3. Internal style sheet (the stylesheet you've created)
 4. Inline style (CSS styles included in your HTML file)
 
-!important would override all of these. 
-
-If there were a second !important, it would only override the first if:
+!important would override all of these.  If there were a second !important, it would only override the first if:
 
 * The selector were more specific (ID vs. Class == ID)
 * If the the second use was defined further down in the stylesheet
@@ -98,6 +112,7 @@ If there were a second !important, it would only override the first if:
 It's up to you to decide when to use !important, but know that with great power comes great responsibility!
 
 ##Units
+
 Sometimes your standard pixels just aren't enough and you need different units for your styles. Here's a breakdown for all the different units you can use in CSS.
 
 * Pixels
@@ -190,6 +205,7 @@ Sometimes your standard pixels just aren't enough and you need different units f
 		* E.g. If the parent element is 500px, a child element with a setting of `width: 50%;` would produce an element with a width of 250px
 
 ##Margin & Padding Tips
+
 Margin and padding are a pretty simple concepts once you see the CSS Box Model (see [here](http://www.w3schools.com/css/css_boxmodel.asp) if you need a refresher).
 
 It's easy as a beginner, though, to set a static width and height on an element before giving the element margin, padding, and a border.
@@ -200,15 +216,19 @@ defined width + padding + border = *Probably more than you intended*
 Let's say, for example, that you want 3 boxes on a row of your page. Each would need to be 33.33...%. If you add a thick border that would throw off the width you defined. So then you might decide to subtract the border size from 33.33...%.
 
 Or, to make it easier for yourself, let's check out the CSS property:
+
 ```css
 box-sizing: content-box /* This is the default value */
 ```
+
 The default property value is content-box because that's what the box model is: your set width is the width of the content. Not including the padding and border.
 
 But...
+
 ```css
 box-sizing: border-box /* This includes padding & border */
 ```
+
 Allows you to set a width that includes padding and border in the final dimensions.
 
 Neat trick, right?
@@ -233,7 +253,7 @@ Here's a list of all the resources we used in the making of this talk.
 
 * [Article on how and when to use !important](https://www.smashingmagazine.com/2010/11/the-important-css-declaration-how-and-when-to-use-it/)
 
-######Selectors
+######Selectors & Pseudo-Selectors
 
 * [In depth explanation of some important selectors](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
 
@@ -270,7 +290,7 @@ Here's a list of all the resources we used in the making of this talk.
 
 * [General rules and information](http://www.w3schools.com/css/css_rwd_mediaqueries.asp)
 
-######Further Reading!
+######Miscellaneous
 
 * [How CSS actually works](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/How_CSS_works)
 * [CSS History](https://en.wikipedia.org/wiki/Cascading_Style_Sheets#History)
