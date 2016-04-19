@@ -329,6 +329,38 @@ left: 0;
 ```
 This would result in an element that is always "stuck" to the bottom of the *closest ancestor with a position value != to static*. Usually you would want that ancestor to be the parent, but not always.
 
+##Flexbox
+In the past, the spacing of children elements inside their parents required methods that sometimes felt inconsistent, like a lot of work for little gain, and overall somewhat "hacky". 
+
+For example, centering a child vertically within their parent might have required you to take half of the child's height, subtract that from half the parent's height, and then use "position: absolute; top [calculated value];" on the child.
+
+**Sounds like more trouble than it is worth, right?**
+
+Both of us were lucky. We were not familiar with HTML/CSS during this time of ambiguity. Instead, we learned flexbox.
+
+[This page](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) is a fantastic resource. Flexbox requires a lot of memorization, and both of use still go here with questions from time to time.
+
+**Here are the basics:**
+
+* Your parent container needs the property "display: flex;"
+* You'll usually use two other properties on the parent:
+  * "justify-content: [property value]" (horizontal alignment)
+  *  "align-items: [property value]" (vertical alignment) 
+* There's a property called "flex-direction" and by default it is row.
+  * If you set this from row to "flex-direction: column;"
+     * justify-content becomes the vertical alignment
+     * align-items becomes horizontal alignment
+* "flex-wrap: nowrap;" is default. This means children stay on one line.
+  * Setting this to "flex-wrap: wrap;" gives you multiple lines and allows you to use the next property.
+* "align-content: stretch"  is the default rendering when flex-wrap is set to wrap.
+  * This is similar to align-items, but rather than handle the alignment of a single row, align-content handles the entire block's alignment. 
+
+There are properties you can define for flex children, but the secret sauce is in the parent styling and that should be your main focus when first learning flexbox.
+
+**So that was a lot of text.**
+
+Flexbox is really visual, so we encourage you to check out the awesome examples located [here](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) once again.
+
 ##Resources and Further Reading
 
 Here's a list of all the resources we used in the making of this talk. 
