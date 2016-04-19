@@ -344,15 +344,15 @@ Luckily, we no longer have to worry about hacking out a solution. We now have fl
 
 * Your parent container needs the property `display: flex;`
 * You'll usually use two other properties on the parent:
-  * `justify-content: [property value];` (horizontal alignment)
-  * `align-items: [property value];` (vertical alignment) 
+  * `justify-content: [property value]; /* horizontal alignment */`
+  * `align-items: [property value]; /* vertical alignment */` 
 * There's a property called "flex-direction" which defaults to row.
   * If you change this to `flex-direction: column;`
      * justify-content now controls vertical alignment
      * align-items now controls horizontal alignment
 * `flex-wrap: nowrap;` is default. This means children stay on one line and will shrink to fit within the parent element.
   * `flex-wrap: wrap;` makes the elements *wrap* around to the next line instead of shrinking to fit. Also, this setting allows you to use the property `align-content`.
-* `align-content: stretch`  is the default when flex-wrap is set to wrap.
+* `align-content: stretch /* the default when flex-wrap is set to wrap */`
   * This is similar to align-items, but rather than handle the alignment of a single row, align-content handles the entire block's alignment. 
 
 There are properties you can define for flex children, but the secret sauce is in the parent styling and that should be your main focus when using flexbox.
