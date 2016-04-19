@@ -32,7 +32,9 @@ In short, CSS Normalize and Reset are different solutions to the same problem:
 Normalize handles these differences by inserting one master stylesheet that makes html elements render with the same styles no matter what browser the page is viewed on. 
 ###[CSS Reset](http://cssreset.com/scripts/eric-meyer-reset-css/)
 Using a CSS reset removes all default styles completely, making it up to you to apply everything. This means no bullet points for `<ul></ul>`, no `<h1></h1>` sizing, no nothing.
+
 ####Advantages
+
 * Easy to implement
 	* Link one stylesheet and you're ready to go!
 * Keeps things consistent
