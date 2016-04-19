@@ -290,10 +290,37 @@ There are properties you can define for flex children, but the secret sauce is i
 Flexbox is really visual, so we encourage you to check out the awesome examples located [here](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) and [here](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
 
 ##Overflow
-
 ![CSS is Awesome](http://www.tivix.com/uploads/original_images/css_is_awesome.png)
+In certain situations, content can overflow the boundaries given by the parent element. The overflow property controls what happens in these situations.
 
-In certain situations, content can overflow the boundaries given by the parent element. The overflow property controls what happens to the overflowed content.
+####Overflow Values
+
+| Value | Description |
+|-------|-------------|
+|Visible|Default value; content allowed outside of box model|
+|Hidden	|Content is hidden	|
+|Scroll	|Same as hidden, but there is always a scrollbar present|
+|Auto	|Same as Scroll, but the scrollbar is only there when it needs to be|
+
+####Overflow-x and Overflow-y
+These values control the overflow properties of each axis and can use all values
+
+####Example
+This is taken directly from the sample site
+```css
+.overflow-box {
+    border: 5px solid rgb(40, 97, 172);
+    height: 150px;
+    width: 50%;
+    /*overflow: hidden;*/
+    /*overflow: scroll;*/
+    overflow-y: scroll;
+    margin: 0 auto;/* for centering using this method, your width must be defined */
+    background-color: white;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+```
 
 ##Transitions
 
