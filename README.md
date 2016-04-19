@@ -99,9 +99,9 @@ The difference here is that you have a reason, whereas most abuse of !important 
 ####Cascading Order (no. 4 is most important)
 
 1. Browser default
-2. External style sheet (for example, a stylesheet pulled from a CDN)
-3. Internal style sheet (the stylesheet you've created)
-4. Inline style (CSS styles included in your HTML file)
+2. External style sheet (for example, a stylesheet pulled from a CDN or anything that you've created)
+3. Internal style sheet (CSS styles included in your HTML file)
+4. Inline style (styles inside elements)
 
 !important would override all of these.  If there were a second !important, it would only override the first if:
 
