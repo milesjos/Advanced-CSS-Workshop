@@ -47,6 +47,36 @@ Using a CSS reset removes all default styles completely, making it up to you to 
 	* Declarations that are unnecessary, such as arbitrary margins on certain elements
 	* The file is fairly large for what it does, but is manageable if you remove all the comments, minify it, and include it as one line in the main stylesheet
 
+####Example 2
+```css
+p {
+	color: white !important;
+}
+```
+```html
+<p style='color: red;'>This will be white.</p>
+```
+This could be thought of as an abuse of !important (it disrupts the cascading order seen below), but maybe you don't want inline styles to show up anymore.
+
+The difference here is that you have a reason, whereas most abuse of !important comes from dungbeetling your CSS and being too lazy to fix it (view Example #1).
+
+*Note that any conflicts with the order below are solved through using the styling of the more specific selector*
+
+####Cascading Order (no. 4 is most important)
+1. Browser default
+2. External style sheet (for example, a stylesheet pulled from a CDN)
+3. Internal style sheet (the stylesheet you've created)
+4. Inline style (CSS styles included in your HTML file)
+
+!important would override all of these. 
+
+If there were a second !important, it would only override the first if:
+
+* The selector were more specific (ID vs. Class == ID)
+* If the the second use was defined further down in the stylesheet
+
+It's up to you to decide when to use !important, but know that with great power comes great responsibility!
+
 ##Units
 Sometimes your standard pixels just aren't enough and you need different units for your styles. Here's a breakdown for all the different units you can use in CSS.
 
