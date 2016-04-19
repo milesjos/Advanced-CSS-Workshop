@@ -290,6 +290,12 @@ There are properties you can define for flex children, but the secret sauce is i
 
 Flexbox is really visual, so we encourage you to check out the awesome examples located [here](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) and [here](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
 
+##Overflow
+
+![CSS is Awesome](http://www.tivix.com/uploads/original_images/css_is_awesome.png)
+
+In certain situations, content can overflow the boundaries given by the parent element. The overflow property controls what happens to the overflowed content.
+
 ##Media Queries
 
 Media Queries are a new technique introduced in CSS3 that basically act as if-else statements in CSS despite the syntax for them being quite different.
