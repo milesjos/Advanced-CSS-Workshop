@@ -3,7 +3,7 @@ Advanced CSS Techniques
 
 ![Spartan Hackers](http://spartanhackers.com/img/spartan-hackers-banner.png)
 
-### Notes from [Morgan](https://github.com/memuyskens) & Josh's talk for [Spartan Hackers](http://spartanhackers.com/)
+### Notes from [Morgan](https://github.com/memuyskens) & [Josh's](https://github.com/milesjos) talk for [Spartan Hackers](http://spartanhackers.com/)
 
 We've found these CSS techniques and resources extremely helpful through our adventures as web developers and we thought they would be helpful for anyone seeking help creating more advanced designs using CSS. Happy hacking!
 ## Introduction
