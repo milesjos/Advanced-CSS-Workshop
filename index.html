@@ -4,25 +4,89 @@
 	<title>Advanced CSS Workshop</title>
 	<meta name="author" content="Josh Miles & Morgan Muyskens">
 	<link rel="icon" type="image/png" href="CSS3.png">
-    <link rel="stylesheet" href="main.css" charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" charset="utf-8">
+  <link rel="stylesheet" href="main.css" charset="utf-8">
 </head>
 <body>
-    <div class="title">
-        <h1 id="mainHeader">Advanced CSS Techniques</h1>
-        <h2 id="names">Josh Miles &amp; Morgan Muyskens</h2>
-    </div>
-    <div class="overflow_box">
-        <p>
-            This is some text that we will have overflow. Microdosing celiac offal,
-            franzen 3 wolf moon mustache sriracha meditation pickled photo booth.
-            Venmo chambray meditation raw denim neutra. Mixtape hella mustache,
-            umami seitan cray gochujang flannel drinking vinegar hashtag squid.
-            Kinfolk keytar pitchfork keffiyeh salvia godard, sriracha chillwave
-            typewriter photo booth try-hard plaid. Godard typewriter echo park
-            raw denim, organic beard before they sold out kale chips kogi
-            mumblecore single-origin coffee polaroid meggings. Echo park
-            selvage man braid, synth biodiesel banh mi irony.
-        </p>
-    </div>
+		<header>
+	      <h1>Advanced CSS Techniques</h1>
+	      <h2>Josh Miles &amp; Morgan Muyskens</h2>
+		</header>
+		<main>
+			<h3>Margin & Padding w/ "box-sizing: border-box;"</h3>
+			<div id='content-box' class='box_sizing'>
+				<ul>
+					<li>box-sizing: content-box;</li>
+					<li>This is default.</li>
+					<li>Because the border is 5px on every side, the width will be 10px more than 33.3% of the viewport.</li>
+				</ul>
+			</div>
+			<div id='border-box' class='box_sizing'>
+				<ul>
+					<li>box-sizing: border-box;</li>
+					<li>Padding and border are included in the width.</li>
+					<li>The width will be 33.3% of page.</li>
+				</ul>
+			</div>
+			<h3>Postioning</h3>
+			<div id='p-fixed' class='positioning'>
+				Fixed
+				<div id='p-relative' class='positioning'>
+					Relative
+					<div id='p-absolute' class='positioning'>
+						Absolute
+					</div>
+				</div>
+			</div>
+			<h3>Flexbox</h3>
+			<div id='flex-container'>
+				<img src='imgs/batman.jpeg' class='flex-img' />
+				<img src='imgs/lastnight.png' class='flex-img' />
+				<img src='imgs/space.jpg' class='flex-img' />
+				<img src='imgs/wonka.jpg' class='flex-img' />
+			</div>
+			<h3>Overflow (multi-line)</h3>
+	    <div class="overflow-box">
+	        <p>
+	            This is some text that we will have overflow. Microdosing celiac offal,
+	            franzen 3 wolf moon mustache sriracha meditation pickled photo booth.
+	            Venmo chambray meditation raw denim neutra. Mixtape hella mustache,
+	            umami seitan cray gochujang flannel drinking vinegar hashtag squid.
+	            Kinfolk keytar pitchfork keffiyeh salvia godard, sriracha chillwave
+	            typewriter photo booth try-hard plaid. Godard typewriter echo park
+	            raw denim, organic beard before they sold out kale chips kogi
+	            mumblecore single-origin coffee polaroid meggings. Echo park
+	            selvage man braid, synth biodiesel banh mi irony. Microdosing celiac offal,
+	            franzen 3 wolf moon mustache sriracha meditation pickled photo booth.
+	            Venmo chambray meditation raw denim neutra. Mixtape hella mustache,
+	            umami seitan cray gochujang flannel drinking vinegar hashtag squid.
+	            Kinfolk keytar pitchfork keffiyeh salvia godard, sriracha chillwave
+	            typewriter photo booth try-hard plaid.
+	        </p>
+	    </div>
+			<h3>Overflow (single-line)</h3>
+			<div id='overflow-single'>
+				<p>Note that you cannot yet use text-overflow on a flex container.</p>
+			</div>
+			<h3>Transitions</h3>
+			<div id='transition-sq'>Hover over me!</div>
+		<!-- <div id="slider">
+			<figure>
+				<img src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg" />
+				<figcaption>Lorem Ipsum blah blah blah blah. Josh sux.</figcaption>
+			</figure>
+		</div> -->
+		</main>
+		<footer>
+		</footer>
+		<script>
+			$("#slider").mouseenter(function() {
+				$("#slider > figure > figcaption").addClass("slide");
+			});
+			$("#slider").mouseout(function() {
+				$("#slider > figure > figcaption").removeClass("slide");
+			});
+		</script>
 </body>
 </html>

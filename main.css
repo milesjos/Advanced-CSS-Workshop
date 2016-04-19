@@ -1,10 +1,174 @@
-.title {
-    text-align: center;
+body {
+  background-color: #222;
 }
-
-.overflow_box {
-    border: 1px solid black;
-    height: 30vh;
-    width: calc(100% / 3);
+header {
+    background-color: rgb(40, 97, 172);
+    text-align: center;
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;*/
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    padding: 20px;
+}
+header > h1 {
+    margin: 0;
+}
+header > h2 {
+    margin: 0;
+}
+main {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+h3 {
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+}
+.box_sizing {
+  width: calc(100% / 3);
+  background-color: white;
+  border: 5px solid rgb(40, 97, 172);
+  height: 150px;
+  margin: 20px auto;
+}
+#content-box {
+  box-sizing: content-box;
+}
+#border-box {
+box-sizing: border-box;
+}
+.positioning {
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  width: 90%;
+}
+#p-fixed {
+  background-color: rgb(40, 172, 73);
+  /*position: fixed;
+  left: 0;*/
+  height: 280px;
+}
+#p-relative {
+  background-color: rgb(172, 44, 40);
+  position: relative;
+  left: 50px;
+  top: -10px;
+  height: 200px;
+}
+#p-absolute {
+  background-color: rgb(126, 40, 172);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+}
+#flex-container {
+/* begin flexbox properties */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+/* end flexbox properties */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 5px solid rgb(40, 97, 172);
+  background-color: #777;
+}
+.flex-img {
+  height: 200px;
+  margin: 10px;
+}
+.overflow-box {
+    border: 5px solid rgb(40, 97, 172);
+    height: 150px;
+    width: 50%;
+    /*overflow: hidden;*/
+    /*overflow: scroll;*/
     overflow-y: scroll;
+    margin: 0 auto;/* for centering using this method, your width must be defined */
+    background-color: white;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+#overflow-single {
+  height: 50px;
+  width: 50%;
+  box-sizing: border-box;
+  border: 5px solid rgb(40, 97, 172);
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+#overflow-single > p {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  /* relevant lines */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* end relevant lines */
+}
+#transition-sq {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(40, 97, 172);
+  transition: background-color 800ms ease 0s;
+}
+#transition-sq:hover {
+  background-color: rgb(172, 44, 40);
+}
+/*#slider {
+  width: 700px;
+  height: 500px;
+}
+#slider > figure {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#slider > figure > img {
+  width: 100%;
+  height: 100%;
+}
+#slider > figure > figcaption {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  transition: transform 400ms ease-in 0s;
+  opacity: 0;
+  pointer-events: none;
+}
+.slide {
+  transform: translateY(0%) !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}*/
+@media screen and (max-width: 600px) {
+  body {
+    background-color: purple;
+  }
 }
