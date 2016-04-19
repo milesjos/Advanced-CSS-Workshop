@@ -39,7 +39,9 @@ Using a CSS reset removes all default styles completely, making it up to you to 
 	* Link one stylesheet and you're ready to go!
 * Keeps things consistent
 	* All of the browsers will render your content the same
+
 ####Disadvantages
+
 * Slows down load time
 	* Adds an extra http request which can slow things down. This is notable when considering slower internet connections
 * Disadvantages of Reset
