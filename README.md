@@ -208,3 +208,45 @@ box-sizing: border-box /* This includes padding & border */
 Allows you to set a width that includes padding and border in the final dimensions.
 
 Neat trick, right?
+
+##Resources and Further Reading
+Here's a list of all the resources we used in the making of this talk. 
+######General Resources
+* [Can I use](http://caniuse.com/)
+* [CSS Tricks](https://css-tricks.com/)
+######CSS Normalize and Reset
+* [Normalize CSS](https://necolas.github.io/normalize.css/)
+* [The most commonly used version of CSS Reset](http://cssreset.com/scripts/eric-meyer-reset-css/)
+* [A good summary of the two and their differences](https://ddessaunet.gitbooks.io/css-training/content/content/reset/reset-vs-normalize-doc.html)
+* [Codepen showing the differences between them](http://codepen.io/nategreen/pen/MwxRvP?editors=110)
+######!important
+* [Article on how and when to use !important](https://www.smashingmagazine.com/2010/11/the-important-css-declaration-how-and-when-to-use-it/)
+######Selectors
+* [In depth explanation of some important selectors](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+######Units
+* [Article on the subtleties between each of the different units](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+######Margin and Padding
+* [Margin rules](https://css-tricks.com/almanac/properties/m/margin/)
+* [Padding Rules](https://css-tricks.com/almanac/properties/p/padding/)
+* [Border-box](https://css-tricks.com/almanac/properties/b/box-sizing/)
+######Positioning
+* [General rules](https://css-tricks.com/almanac/properties/p/position/)
+* [Centering in CSS](https://css-tricks.com/centering-css-complete-guide/)
+######Flex
+* [CSS Tricks guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [scotch.io tutorial](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
+######Overflow
+* [General rules](https://css-tricks.com/almanac/properties/o/overflow/)
+######Transitions and Animations
+* [General rules and information](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
+* [CSS Animations vs. Javascript](https://css-tricks.com/myth-busting-css-animations-vs-javascript/)
+######Media Queries
+* [General rules and information](http://www.w3schools.com/css/css_rwd_mediaqueries.asp)
+######Further Reading!
+* [How CSS actually works](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/How_CSS_works)
+* [CSS History](https://en.wikipedia.org/wiki/Cascading_Style_Sheets#History)
+* [CSS Preprocessors](http://www.sitepoint.com/6-current-options-css-preprocessors/)
+	* [Sass](http://sass-lang.com/)
+	* [Less](http://lesscss.org/)
+* [initial-scale=1](https://css-tricks.com/probably-use-initial-scale1/)
+* CSS Autoprefixers for [Sublime Text](https://github.com/sindresorhus/sublime-autoprefixer) and [Atom](https://atom.io/packages/autoprefixer)
