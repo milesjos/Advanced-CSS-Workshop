@@ -449,11 +449,13 @@ Here's a list of all the resources we used in the making of this talk.
 ######Transitions and Animations
 
 * [General rules and information](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
+* [List of elements that can have transition properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
 * [CSS Animations vs. Javascript](https://css-tricks.com/myth-busting-css-animations-vs-javascript/)
 
 ######Media Queries
 
-* [General rules and information](http://www.w3schools.com/css/css_rwd_mediaqueries.asp)
+* [General rules and information](http://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
+* [Article on using Media Queries](http://www.w3schools.com/css/css_rwd_mediaqueries.asp)
 
 ######Miscellaneous
 
